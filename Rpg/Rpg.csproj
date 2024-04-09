@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1243F043-0FA8-4884-B0F8-B28458816636}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rpg</RootNamespace>
+    <AssemblyName>Rpg</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Armor.cs" />
+    <Compile Include="Classes\Block.cs" />
+    <Compile Include="Classes\Craft.cs" />
+    <Compile Include="Classes\Culture.cs" />
+    <Compile Include="Classes\Factory.cs" />
+    <Compile Include="Abstractions\ICraft.cs" />
+    <Compile Include="Classes\Item.cs" />
+    <Compile Include="Classes\MechanicObject.cs" />
+    <Compile Include="Classes\Mob.cs" />
+    <Compile Include="Classes\Recipe.cs" />
+    <Compile Include="Classes\Weapon.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heroWF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoneIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoneSword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoneSwordU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoneSword1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WoodIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factory1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factory11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factory12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factory13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factory1Destroyed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpringBush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpringBush1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factory2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Factory2Destroyed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ore1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AracIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AracSword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snowman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snowman1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snowman2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snowman3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zombie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zombie1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonsterMoney.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skeleton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WoodArmor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadiantEnemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadiantSword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpringItemIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpringFactory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrokenSpringFactory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpringMob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarrotSeeds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarrotObject1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarrotObject2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoPuter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoPuterActive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActivatedAutoBattler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoBattler.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

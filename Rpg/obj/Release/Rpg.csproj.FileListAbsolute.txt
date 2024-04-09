@@ -1,0 +1,10 @@
+C:\Users\admin\source\repos\Rpg\Rpg\bin\Release\Rpg.exe.config
+C:\Users\admin\source\repos\Rpg\Rpg\bin\Release\Rpg.exe
+C:\Users\admin\source\repos\Rpg\Rpg\bin\Release\Rpg.pdb
+C:\Users\admin\source\repos\Rpg\Rpg\obj\Release\Rpg.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\Rpg\Rpg\obj\Release\Rpg.Form1.resources
+C:\Users\admin\source\repos\Rpg\Rpg\obj\Release\Rpg.Properties.Resources.resources
+C:\Users\admin\source\repos\Rpg\Rpg\obj\Release\Rpg.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\Rpg\Rpg\obj\Release\Rpg.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Rpg\Rpg\obj\Release\Rpg.exe
+C:\Users\admin\source\repos\Rpg\Rpg\obj\Release\Rpg.pdb
